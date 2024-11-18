@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Estilos gerais -->
+    <link rel="stylesheet" href="areas.css"> <!-- Arquivo CSS separado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Natureza</title>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="areas-do-conhecimento.html" class="voltar">Voltar</a>
+    </div>
+
+    <div class="background">              
+        <main style="text-align: center;">
+            <h2 class="titulo">Natureza</h2> 
+            <p class="subtitulo">Atividades</p>
+
+     <!-- Botões para os trimestres -->
+     <div class="btn-toggle-container" id="btnToggleContainer">
+        <button class="btn-toggle" id="toggleButton1">1º Trimestre</button>
+        <button class="btn-toggle" id="toggleButton2">2º Trimestre</button>
+        <button class="btn-toggle" id="toggleButton3">3º Trimestre</button>
+    </div>
+</main> 
+
+<!-- Área que contém os cards para o 1º Trimestre, inicialmente oculta -->
+<div class="container" id="cardContainer1" style="display: none;">
+    <div class="card">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAF-vum4tpQ/tk2D20JGBCWik3pZljNsNA/view?embed"></iframe>
+        <p>EVOLUCIONISMO C2 H11        </p>
+    </div>
+
+    <div class="card">
+        <iframe loading="lazy" src="https://docs.google.com/document/d/1B1hsDoZnlt_o5HRv76TqARpxqe-eLLt9ttEpCmiYfDU/view?embed"></iframe>
+        <p>PRÁTICA SOBRE CIRCUITOS HABILIDADES C2 H6 C6 H34  </p>
+    </div>
+
+    
+</div>
+
+<!-- Área que contém os cards para o 2º Trimestre, inicialmente oculta -->
+<div class="container" id="cardContainer2" style="display: none;">
+    <div class="card">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGWxFidw6g/XSNqBKuC8AxpWwdhF9ShpQ/view?embed"></iframe>
+        <p>CARTAZ DE CONSCIENTIZAÇÃO DO USO DE PLÁSTICO HAB C3 H15 E H18</p>
+    </div>
+
+    <div class="card">
+        <iframe loading="lazy" src="https://docs.google.com/document/d/1w4EIu7gF_vCylKV_iuAaKu5g9ijnE6rutqAEfbHV7-U/view?embed"></iframe>
+        <p> FUNÇÕES ORGÂNICAS HABILIDADES C3 H14, H18 e C4 H23</p>
+    </div>
+
+    <div class="card">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGH72_b9HU/Ud2eCJtsNMfWGrQMnAIQMQ/view?embed"></iframe>
+        <p>INTRODUÇÃO AO ELETROMAGNETISMO HABILIDADES C6 H36</p>
+    </div>
+</div>
+
+<!-- Área que contém os cards para o 3º Trimestre, inicialmente oculta -->
+<div class="container" id="cardContainer3" style="display: none;">
+    <div class="card">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGQdWYtSGg/wEAedG3A9aXugIqIM-GPNw/view?embed"></iframe>
+        <p>DESEQUILIBRIOS AMBIENTAIS HABILIDADES C5- H27 e H28</p>
+    </div>
+
+    <div class="card">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGVDruN97k/D5RC1Ef-luMO8gG1-soV8w/view?embed"></iframe>
+        <p>DICIONARIO ILUSTRADO DE ECOLOGIA</p>
+    </div>
+</div>
+</div>
+
+<!-- Link para o arquivo JavaScript externo -->
+<script src="menu.js"></script>
+<script>
+// Script para mostrar e esconder os cards de cada trimestre
+const toggleButton1 = document.getElementById('toggleButton1');
+const toggleButton2 = document.getElementById('toggleButton2');
+const toggleButton3 = document.getElementById('toggleButton3');
+
+const cardContainer1 = document.getElementById('cardContainer1');
+const cardContainer2 = document.getElementById('cardContainer2');
+const cardContainer3 = document.getElementById('cardContainer3');
+
+// Função para esconder todos os contêineres de cards
+function hideAllContainers() {
+    cardContainer1.style.display = 'none';
+    cardContainer2.style.display = 'none';
+    cardContainer3.style.display = 'none';
+}
+
+// Função para mostrar o contêiner específico do trimestre
+function showContainer(container) {
+    hideAllContainers();
+    container.style.display = 'flex';
+}
+
+// Adicionando evento de clique nos botões para exibir os cards de cada trimestre
+toggleButton1.addEventListener('click', () => showContainer(cardContainer1));
+toggleButton2.addEventListener('click', () => showContainer(cardContainer2));
+toggleButton3.addEventListener('click', () => showContainer(cardContainer3));
+</script>
+
+</body>
+</html>
