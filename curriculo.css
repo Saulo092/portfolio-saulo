@@ -1,0 +1,92 @@
+/* Reseta o padding e margin padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições de fonte padrão para o site */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #333;
+    padding: 20px;
+}
+
+/* Centraliza o conteúdo principal da página */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título principal da página */
+.main-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a área de navegação de botões */
+.button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para os links que se comportam como botões */
+.action-button {
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.action-button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para a imagem do currículo */
+.cv-image {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom na imagem do currículo ao passar o mouse */
+.cv-image:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo geral para o botão "Voltar" */
+.voltar-button {
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Faz o link se comportar como um botão */
+    background-color: #ffffff; /* Cor de fundo vermelho */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave para efeito de hover */
+}
+
+/* Efeito de hover no botão "Voltar" */
+.voltar-button:hover {
+    background-color: #c0be2b; /* Escurece o fundo quando passa o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* Efeito de foco no botão "Voltar" (para acessibilidade) */
+.voltar-button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 5px 2px rgba(231, 76, 60, 0.6); /* Adiciona uma borda sutil de destaque */
+}

@@ -20,11 +20,13 @@
             <h2 class="titulo">Linguagens</h2> 
             <p class="subtitulo">Atividades</p>
 
-            <!-- Botões para os trimestres -->
+            <!-- Botões para os trimestres e o botão para o currículo -->
             <div class="btn-toggle-container" id="btnToggleContainer">
                 <button class="btn-toggle" id="toggleButton1">1º Trimestre</button>
                 <button class="btn-toggle" id="toggleButton2">2º Trimestre</button>
                 <button class="btn-toggle" id="toggleButton3">3º Trimestre</button>
+                <!-- Botão para o currículo -->
+                <a href="curriculo.html" class="btn-toggle curriculo-button">Currículo</a>
             </div>
         </main> 
         
@@ -39,27 +41,22 @@
                 <iframe loading="lazy" src="https://docs.google.com/document/d/1_PpBIRZa6P7_zAzKgpkKWl6TACt05X-csJ4DhYfjgsc/view?embed"></iframe>
                 <p>APRESENTAÇÕES PRÉ-MODERNISMO E PRODUÇÃO TEXTUAL </p>
             </div>
-        
-            
         </div>
 
         <!-- Área que contém os cards para o 2º Trimestre, inicialmente oculta -->
         <div class="container" id="cardContainer2" style="display: none;">
             <div class="card">
-                <iframe loading="lazy" src="/imagens/nota-redacao.png"></iframe>
+                <iframe loading="lazy" src="imagens/nota-redacao.png"></iframe>
                 <p>NOTA DA REDAÇÃO</p>
             </div>
-        
-            
         </div>
 
         <!-- Área que contém os cards para o 3º Trimestre, inicialmente oculta -->
         <div class="container" id="cardContainer3" style="display: none;">
             <div class="card">
-                <iframe loading="lazy" src="/imagens/nota-redacao.png"></iframe>
+                <iframe loading="lazy" src="imagens/nota-redacao.png"></iframe>
                 <p>NOTA DA REDAÇÃO</p>
             </div>
-
         </div>
     </div>
 
@@ -93,6 +90,5 @@
         toggleButton2.addEventListener('click', () => showContainer(cardContainer2));
         toggleButton3.addEventListener('click', () => showContainer(cardContainer3));
     </script>
-    
 </body>
 </html>
